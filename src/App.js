@@ -5,6 +5,7 @@ import Home from './Component/Home/Home';
 import Friend from './Component/Friend/Friend';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Component/Header/Header';
+import FriendDetail from './Component/FriendDetail/FriendDetail';
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path='/home'>
             <Home></Home>
+          </Route>
+          <Route path='/friends/:friendId'>
+            <FriendDetail></FriendDetail>
           </Route>
           <Route path='/friends'>
             <Friends></Friends>
