@@ -6,6 +6,7 @@ import Friend from './Component/Friend/Friend';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './Component/Header/Header';
 import FriendDetail from './Component/FriendDetail/FriendDetail';
+import Culture from './Component/Culture/Culture';
 
 function App() {
 
@@ -27,8 +28,11 @@ function App() {
           <Route path='/friends'>
             <Friends></Friends>
           </Route>
-          <Route path='/PNF'>
+          <Route exact path='/PNF'>
             <PNF></PNF>
+          </Route>
+          <Route exact path='/PNF/culture'>
+             <Culture></Culture>
           </Route>
           {/* <Route path='*'>
            <NotFound></NotFound>
